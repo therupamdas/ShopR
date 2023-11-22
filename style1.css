@@ -197,6 +197,14 @@ h1{
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: cover;
+
+    animation-name: slidee;
+    animation-duration: 6s;
+    animation-timing-function: all ease;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
 }
 #slider2{
     display: flex;
@@ -204,10 +212,15 @@ h1{
     bottom: 1.25rem;
     left: 50%;
     transform: translate(-50%);
+
     z-index: 1;
     column-gap: 10rem;
 }
-
+@keyframes slidee{
+    0%{transform: translate(0);}
+    50%{transform: translate(-100%);}
+    100%{transform: translate(-200%);}
+}
 #slider2 a{
     width: 10px;
     height: 10px;
