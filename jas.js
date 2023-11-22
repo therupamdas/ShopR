@@ -1,1 +1,3 @@
-console.log("Rupam Das GG")
+alert("Naam bata");
+let a = prompt("Enter a Number");
+document.write(a);
