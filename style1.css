@@ -5,6 +5,12 @@ option{
     font-family: gazpacho;
     border: border-box;
 }
+.l{
+    margin-left: 6%;
+}
+.r{
+    margin-right: 6%;
+}
 footer{
     margin-top: 1000px;
     display: flex;
@@ -53,7 +59,7 @@ h1{
     font-weight: bold;
     color:rgb(255, 55, 20);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 5%;
 }
