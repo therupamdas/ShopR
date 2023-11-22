@@ -199,7 +199,7 @@ h1{
     object-fit: cover;
 
     animation-name: slidee;
-    animation-duration: 6s;
+    animation-duration: 9s;
     animation-timing-function: all ease;
     animation-delay: 2s;
     animation-iteration-count: infinite;
