@@ -1,3 +1,6 @@
+option{
+    text-align: center;
+}
 *{
     font-family: gazpacho;
     border: border-box;
