@@ -32,6 +32,7 @@ footer{
 }
 body{
     background-color: white;
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -40,6 +41,7 @@ a{
 h1{
     font-size: 3vw;
     color: yellow;
+    text-shadow: 6px 3px 7px rgba(0, 0, 0, 0.4);
 }
 .shop{
     height: 100%;
@@ -68,12 +70,22 @@ h1{
     background-color: white;
     border: 2px solid rgb(124, 2, 32);
     border-radius: 6px;
-
+    animation-name: entri;
+    animation-duration: 2s;
+    animation-timing-function: all ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
     color: black;
 }
 .items img{
     aspect-ratio: 1/1;
     transition: all ease 0.2s;
+
+    animation-name: entri;
+    animation-duration: 3s;
+    animation-timing-function: all ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
 }
 .items:hover img{
     scale: 1.2;
@@ -88,6 +100,19 @@ h1{
     font-size: 25px;
     color: white;
 }
+@keyframes vibi{
+    from{visibility: hidden;}
+    to{visibility: visible;}
+}
+@keyframes entri{
+    from{transform: translate(-50%);}
+    to{transform: translate(0%);}
+}
+@keyframes entrii{
+    from{transform: translateY(-100%)}
+    to{transform: translateY(0%);}
+}
+
 .block{
     font-size: 2vw;
     border: 1px solid rgba(255, 255, 255, 0);
@@ -106,6 +131,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.2);
 }
 #searchbar:hover{
     border: 2px solid rgb(255, 174, 107);
@@ -183,6 +209,12 @@ h1{
 }
 #slidercont{
     position: relative;
+    z-index: -1;
+    animation-name: entrii;
+    animation-duration: 3s;
+    animation-timing-function: all ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
 }
 #slider1{
     display: flex;
@@ -201,7 +233,7 @@ h1{
     animation-name: slidee;
     animation-duration: 9s;
     animation-timing-function: all ease;
-    animation-delay: 2s;
+    animation-delay: 3s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 
@@ -227,4 +259,5 @@ h1{
     opacity: 100%;
     border-radius: 50%;
     background-color: rgb(255, 71, 117);
+    border: 3px white solid;
 }
